@@ -137,3 +137,20 @@ const ReserveTable = () => {
 };
 
 export default ReserveTable;
+import React from 'react';
+import { ChakraProvider } from '@chakra-ui/react';
+import ReserveTable from './ReserveTable';
+
+function App() {
+  return (
+    <ChakraProvider>
+      <div className="App">
+        <h1>Little Lemon Restaurant</h1>
+        <ReserveTable />
+      </div>
+    </ChakraProvider>
+  );
+}
+
+export default App;
+
